@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*!
+ * Button.css - http://ricocc.com/css3buttons/ 
+ * Github address - https://github.com/ricocc/css3buttons/
+ * Version - 1.0.0
+ * Latest update - 2021.05.27
+ * autor: Rico
+ * wechat: rrningmengyu
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * 
+ */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+    min-width: 160px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 40px;
+    background-color: #18b33b;
+    color: #FFFFFF;
+}
+
+
+
+/*================================================== 
+   常规按钮  button
+  ==================================================  */
+    /* button 01 */
+        .btn-01 {
+            min-width: 160px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 600;
+            background: #18b33b;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            background-image: linear-gradient(333deg, #29d859 0%, #00a50b 100%);
+            background-image: -webkit-linear-gradient(333deg, #29d859 0%, #00a50b 100%);
+            background-image: -o-linear-gradient(333deg, #29d859 0%, #00a50b 100%);
+            background-image: -ms-linear-gradient(333deg, #29d859 0%, #00a50b 100%);
+            box-shadow: 0 6px 0px #468f24;
+            color: #FFFFFF;
+            transition: all 0.5s ease;
+            overflow: hidden;
+        }
+        .btn-01:hover,a.btn-01:hover{
+            transform: translateY(-3px);
+        }
+        .btn-01:not(:hover):after,
+        a.btn-01:not(:hover):after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            height: 40px;
+            width: 15px;
+            background: rgba(255, 255, 255, 0.35);
+            transition: all 0.5s ease;
+            -webkit-animation: 2s slideIn infinite;
+            animation: 2s slideIn infinite;
+        }
+        @-webkit-keyframes slideIn {
+            0% {
+                transform: skewX(20deg) translateX(0);
+            }
+
+            100% {
+                transform: skewX(20deg) translateX(200px);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: skewX(20deg) translateX(0);
+            }
+
+            100% {
+                transform: skewX(20deg) translateX(200px);
+            }
+        }
+    /* End button 01 */
+
+/*================================================== 
+   button End 
+  ==================================================  */
+
+
+/*================================================== 
+   场景化氛围按钮 Scene button class scene_*
+  ==================================================  */
+
+
+
+/*================================================== 
+   场景化氛围按钮 Scene button  End
+  ==================================================  */
+
+/* commmon size control*/
+
+.btn-s {
+
+}
+
+.btn-m {
+
+}
+
+.btn-l {
+}
+
+

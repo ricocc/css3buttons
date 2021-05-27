@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>每日一个CSS按钮</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/button.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+
+<div id="wrapper">
+    <div class="header">
+        <h1 class="title">每日一个CSS按钮</h1>
+        <div class="count">目前已有 <span id="num"></span> 个按钮 </div> 
+        <div class="autor">下载 <a href="css/button.css" target="_blank" >Buttons.css</a> <span>|</span>  Create by <a href="http://www.ricocc.com" target="_blank"> @ricocc </a> <span>|</span> <a href="#"  target="_blank">Github</a>  </div>
+    </div>
+  <section>
+
+      <h2 class="title">常规按钮</h2>
+    <div class="main">
+            <a class="btn btn-01" href="#">Just Btn 01</a>
+            <a class="btn btn-01" href="#">Just Btn 02</a>
+    </div>
+  </section>
+  <section>
+    <h2 class="title">氛围感按钮</h2>
+    <div class="main sec">
+        <a class="btn scene-btn-01" href="#">Summer</a>
+
+    </div>
+  </section>
+
+
+
+</div>
+
+
+
+<script>  
+window.onload = function(){
+      var num = document.getElementById("num");
+      var count = document.getElementsByClassName("btn").length;
+      num.innerHTML = count;
+    }
+</script>
+</body>
+</html>
